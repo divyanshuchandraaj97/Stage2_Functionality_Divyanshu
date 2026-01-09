@@ -10,7 +10,9 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="./asset/logo.png" alt="School Logo" class="logo" /></a>
+      <a href="index.html"
+        ><img src="./asset/logo.png" alt="School Logo" class="logo"
+      /></a>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -41,17 +43,13 @@
           <p>info@greenwoodschool.edu</p>
         </div>
       </div>
-
+      <!-- ================== CONTACT FORM ==================  -->
       <h2>Send Us a Message</h2>
 
       <form id="contactForm">
         <label for="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          placeholder="Enter your name"
-        />
-      
+        <input type="text" id="name" placeholder="Enter your name" />
+
         <label for="mobile">Mobile Number:</label>
         <input
           type="tel"
@@ -61,33 +59,28 @@
           maxlength="10"
           pattern="[0-9]{10}"
         />
-      
+
         <label for="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Enter your email"
-        />
-        <label for="subject">Subject *</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+
+        <label for="subject">Subject:</label>
         <select id="subject" name="subject" required>
-        	<option value="">Select a subject</option>
-        	<option value="admission">Admission Inquiry</option>
-         	<option value="general">General Inquiry</option>
+          <option value="" disabled selected hidden>
+              Select a subject
+          </option>
+          <option value="admission">Admission Inquiry</option>
+          <option value="general">General Inquiry</option>
           <option value="feedback">Feedback</option>
-     		  <option value="complaint">Complaint</option>
+          <option value="complaint">Complaint</option>
           <option value="other">Other</option>
         </select>
         <label for="message">Message:</label>
-        <textarea
-          id="message"
-          placeholder="Write your message"
-        ></textarea>
-      
+        <textarea id="message" placeholder="Write your message"></textarea>
+
         <button type="submit">Send Message</button>
-      
+
         <p id="formMsg"></p>
       </form>
-      
     </section>
 
     <!-- Footer -->
@@ -111,8 +104,7 @@
         </div>
 
         <div class="footer-right">
-          <button id="themeToggle" class="theme-toggle">
-          </button>
+          <button id="themeToggle" class="theme-toggle"></button>
           <h4>Follow Us</h4>
           <div class="social-icons">
             <a
@@ -199,4 +191,3 @@
     </footer>
   </body>
 </html>
-
